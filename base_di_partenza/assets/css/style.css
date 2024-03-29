@@ -12,6 +12,14 @@ p {
   font-weight: 500;
 }
 
+.bianco {
+  background-color: white;
+}
+
+.verde {
+  background-color: lightgreen;
+}
+
 /* FINE GENERALE */
 
 /* HEADER */
@@ -22,6 +30,8 @@ header {
   padding-block: 20px;
   background-color: #ffc017;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
 }
 
 header nav {
@@ -62,13 +72,25 @@ main {
 .start {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  /* flex-grow: 1; */
-  padding-inline: 100px;
-  padding-block: 70px;
+  padding-block-start: 100px;
   background-color: #ffc017;
-  border-top: 1px solid grey;
+  margin-right: auto;
+  margin-left: 200px;
+  align-content: center;
+}
+
+.start p {
+  padding-block: 50px;
+  font-size: 1.5em;
+}
+
+.start-reading {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffc017;
   border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  min-height: 200px;
 }
 
 .start button {
@@ -94,6 +116,7 @@ main {
   flex-wrap: wrap;
   gap: 25px;
   margin: auto;
+  padding-block-end: 50px;
   /* flex-direction: column; */
 }
 
@@ -176,6 +199,7 @@ section {
   flex-direction: column;
   width: 70%;
   flex-shrink: 1;
+  margin-right: 100px;
 }
 
 section .card {
@@ -215,12 +239,6 @@ section .card {
   flex-basis: 70%;
 }
 
-aside {
-  display: flex;
-  min-height: 100px;
-  flex-grow: 1;
-}
-
 .section-card-img img {
   height: 150px;
 }
@@ -245,4 +263,52 @@ aside {
   margin-right: auto;
 }
 
+aside {
+  flex-grow: 2;
+  width: 25%;
+}
+
+aside .discover-more {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-block-end: 15px;
+  margin-block-start: 50px;
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightgray;
+  padding-block-end: 30px;
+}
+
+.topics p {
+  border: 1px solid lightgray;
+  color: gray;
+  padding-inline: 5px;
+  padding-block: 10px;
+  margin-inline-end: 10px;
+  margin-block: 10px;
+}
+
+.links ul li {
+  display: inline-block;
+  color: gray;
+  padding-inline-end: 10px;
+  padding-block: 10px;
+}
+
+.links a {
+  color: gray;
+}
+
+.M-svg img {
+  width: 100%;
+  height: 50%;
+}
+
+.M-svg {
+  height: 50%;
+}
 /* FINE ARTICLE */

@@ -1,0 +1,248 @@
+/* GENERALE */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* FINE GENERALE */
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 20px;
+  background-color: #ffc017;
+  flex-wrap: wrap;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+/* FINE HEADER */
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+/* INZIO START */
+.start {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* flex-grow: 1; */
+  padding-inline: 100px;
+  padding-block: 70px;
+  background-color: #ffc017;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.start button {
+  padding-inline: 30px;
+  width: 200px;
+}
+/* FINE START */
+
+/* INIZIO TREND */
+
+.trend-container {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 50px;
+  align-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.trend {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: auto;
+  /* flex-direction: column; */
+}
+
+.trend-title {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 20px;
+  padding-block-end: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+.trend-title p {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.trend-title img {
+  margin-inline-end: 10px;
+}
+
+.trend img {
+  display: block;
+  margin-inline-end: 10px;
+}
+
+.trend .trend-card {
+  width: 30%;
+  min-height: 100px;
+  display: flex;
+}
+
+.trend .post-trend {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend .info-person {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.post-trend img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.trend .num-post {
+  margin-inline-end: 10px;
+  font-size: 2.5em;
+  color: lightgray;
+}
+
+.trend .post-trend p:first-of-type {
+  font-size: 1.2em;
+  margin-block: 10px;
+  font-weight: bold;
+}
+
+.trend .post-trend p:last-of-type {
+  color: lightgray;
+  font-size: 0.8em;
+}
+
+/* FINE TREND */
+
+/* ARTICLE */
+.article {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  min-height: 200px;
+  justify-content: flex-start;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  flex-shrink: 1;
+}
+
+section .card {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  margin-block-start: 50px;
+  justify-content: space-between;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .info-person-card {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.info-person-card img {
+  border-radius: 50%;
+}
+
+.section-card p:first-of-type {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-block: 10px;
+}
+
+.section-card p:nth-of-type(2) {
+  color: gray;
+}
+
+.section-card {
+  flex-basis: 70%;
+}
+
+aside {
+  display: flex;
+  min-height: 100px;
+  flex-grow: 1;
+}
+
+.section-card-img img {
+  height: 150px;
+}
+
+.info-card {
+  display: flex;
+  color: gray;
+  align-items: center;
+  margin-block-start: 10px;
+}
+
+.info-card span:last-of-type {
+  display: inline-block;
+  margin-inline: 10px;
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 5px;
+  padding-inline: 10px;
+}
+
+.info-card img:first-of-type {
+  margin-right: auto;
+}
+
+/* FINE ARTICLE */
